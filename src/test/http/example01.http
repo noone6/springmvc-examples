@@ -1,0 +1,44 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+###
+GET http://localhost:8080/api/example01/login
+
+###
+GET http://localhost:8080/api/example01/addresses
+
+###
+POST http://localhost:8080/api/example01/addresses
+Content-Type: application/json
+
+{
+  "detail": "956",
+  "comment": "123456"
+}
+
+###
+GET http://localhost:8080/api/example01/news/12
+
+###
+GET http://localhost:8080/api/example01/repos/bwhyman/spring-examples/issues/12/comments
+
+###
+GET http://localhost:8080/api/example01/addresses/1
+
+###
+PATCH http://localhost:8080/api/example01/addresses/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "detail": "745",
+  "user": {
+    "id": 1
+  }
+}
+
+###
